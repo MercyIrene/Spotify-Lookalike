@@ -11,7 +11,7 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 720px;
     background-image: url(Images/background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body {
 
 .container {
     width: 265px;
-    height: 658px;
+    height: 700px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     backdrop-filter: blur(15px);
@@ -37,28 +37,34 @@ body {
     height: 20px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 15px;
 }
 
 .top-panel div:nth-of-type(1) {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #f00; 
     border-radius: 50%;
 }
 
 .top-panel div:nth-of-type(2) {
-    width: 8px;
-    height: 8px;
-    background-color: #ffaa00; 
+    width: 10px;
+    height: 10px;
+    background-color: yellow; 
     border-radius: 50%;
 }
 
 .top-panel div:nth-of-type(3) {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #0c0; 
     border-radius: 50%;
+}
+
+.top-panel div:hover {
+    width: 15px;
+    height: 15px;
+    transition: 500ms ease-in;
 }
 
 .logo-panel {
@@ -66,13 +72,19 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: rgb(78, 184, 78);
+    gap: 15px;
+    color: rgb(8, 230, 8);
 }
 
 .logo-panel img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-panel img:hover {
+    width: 60px;
+    height: 60px;
+    transition: 500ms ease-in;
 }
 
 .menu-option {
@@ -85,7 +97,7 @@ body {
 .menu-option span {
     display: flex;
     margin: 4px auto 15px auto;
-    width: 200px;
+    width: 250px;
     height: 2px;
     background: linear-gradient(to right, rgba(30,87,153,0) 0%, rgba(253,255,254,0.98) 50%, white 51%, rgba(255,258,226,0) 99%, rgba(229,228,229,0) 100%);
 }
@@ -115,7 +127,9 @@ body {
 }
 
 .menu-option ul li a:hover {
-    background-color: rgba(9,223,9,0.3);
+    color: rgb(255, 174, 0);
+    font-size: 20px;
+    background-color: rgba(5, 248, 5, 0.3);
 }
 
 .fa-angle-right {
@@ -130,6 +144,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    
 }
 
 .thumbnails-panel img {
@@ -140,32 +155,32 @@ body {
 .thumbnails-panel img:nth-of-type(1) {
     position: relative;
     transform: rotate3d(1,1,0.8, -10deg);
-    top: -10px;
+    
 }
 
 .thumbnails-panel img:nth-of-type(2) {
     position: absolute;
-    transform: rotate3d(1,1,0.8, 0deg);
-    left: 75px;
-    top: 25px;
+    transform: rotate3d(1,1,0.8, 20deg);
+    left: 82px;
+    top: 35px;
 }
 
 .thumbnails-panel img:nth-of-type(3) {
     position: absolute;
-    transform: rotate3d(1,0.9,0.4, 10deg);
-    left: 70px;
-    top: 35px;
+    transform: rotate3d(1,0.8,6, 40deg);
+    left: 65px;
+    top: 42px;
 }
 
 .thumbnails-panel img:nth-of-type(4) {
     position: absolute;
-    transform: rotate3d(1,0.6,0.3, 30deg);
-    left: 65px;
-    top: 45px;
-    box-shadow: 12px 7px 11px #111;
+    transform: rotate3d(1,0.6,6, 60deg);
+    left: 43px;
+    top: 42px;
 }
 
 .song-detail {
+    margin-top: 10px;
     width: 100%;
     height: 20px;
     font-family: sans-serif;
@@ -217,15 +232,22 @@ body {
     font-size: 30px;
 }
 
+.fa-circle-play:hover {
+    font-size: 40px;
+    ransition: 500ms ease-in;
+    
+}
+
 .play-music span {
     display: block;
     margin: 15px auto 0 auto;
     background: linear-gradient(to right, rgba(30,87,153,0) 0%, rgba(253,255,254,0.98) 50%, white 51%, rgba(255,258,226,0) 99%, rgba(229,228,229,0) 100%);
-    width: 200px;
+    width: 250px;
     height: 2px;
 }
 
 .footer {
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -233,14 +255,22 @@ body {
     padding: 6px 0;
     color: #fff;
     font-family: sans-serif;
-    gap: 15px;
+    gap: 20px;
 }
 
-.footer img {
-    width: 40px;
-    height: 40px;
+.footer img {    
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
+
+.footer img:hover {
+    width: 70px;
+    height: 70px;
+    transition: 500ms ease-in;
+}
+
 .footer span {
     width: 21px;
+    height: 70px;
 }
